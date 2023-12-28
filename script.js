@@ -1,6 +1,6 @@
 
 // Creating a server
-const http = require('http');
+// const http = require('http');
 // const port = 3001;
 
 // const server = http.createServer((req,res) => {
@@ -14,7 +14,7 @@ const http = require('http');
 
 
 // readline method
-const readline = require("readline");
+// const readline = require("readline");
 // const rl = readline.createInterface({
 //     input:process.stdin,
 //     output:process.stdout
@@ -31,7 +31,7 @@ const readline = require("readline");
 
 
 // Files (Reading & Writing Synchronously)
-const fs = require("fs");
+// const fs = require("fs");
 // const { readFile } = require('fs/promises');
 // let inputtext = fs.readFileSync("./input.txt" , "utf-8");
 // console.log(inputtext);
@@ -55,7 +55,7 @@ const fs = require("fs");
 
 // CREATING & ROUTING
 
-const htmlc = fs.readFileSync('./try1/index.html' , 'utf-8')
+// const htmlc = fs.readFileSync('index.html' , 'utf-8')
 // const server = http.createServer((req,res) => {
 //     let path = req.url;
 //     if(path == '/' || path == '/home') {
@@ -95,7 +95,7 @@ const htmlc = fs.readFileSync('./try1/index.html' , 'utf-8')
 //         res.end('This is the Product page')
 //         // console.log(products)
 //     }else{
-//         res.write("Not Found!!!")
+//         res.write("Not Found!!!") 
 //     }
 // });
 // const port = 4000;
@@ -105,14 +105,30 @@ const htmlc = fs.readFileSync('./try1/index.html' , 'utf-8')
 
 
 // test1
-const server = http.createServer((req,res) => {
-    if(req.url === '/' || req.url === '/home'){
-        res.writeHead(200,{'Content-Type':'text/html'})
-        res.write(htmlc)
-        res.end();
-    }
-});
-const port = 4001;
-server.listen(port,() => {
-    console.log(`Server created on : http://localhost:${port}`);
-})
+// const server = http.createServer((req,res) => {
+//     if(req.url === '/' || req.url === '/home'){
+//         res.writeHead(200,{'Content-Type':'text/html'})
+//         res.write(htmlc)
+//         res.end();
+//     }
+// });
+// const port = 4001;
+// server.listen(port,() => {
+//     console.log(`Server created on : http://localhost:${port}`);
+// })
+
+
+// test2
+// const express = require('express');
+// let app = express();
+
+// app.get('/' , (req,res) => {
+//     res.send('hello node');
+// });
+// app.get('/about' , (req,res) => {
+//     res.send('this is about page')
+// })
+// const port = 5001;
+// app.listen(port, () => {
+//     console.log(`Server on http://localhost:${port}`);
+// })
