@@ -1,1 +1,1 @@
-Helloo...This is Sample of Inner Text 
+This is Sample for the node innertext example,
